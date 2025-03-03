@@ -10,21 +10,45 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        /*justify-content: center; !* Center vertically *!*/
         height: 100vh;
+        text-align: center; /* Center text horizontally */
+        background-color: #D0D0D0;
+
     }
     .title {
-        width: 40%;
+        width: 20%; /* Adjusted width to make the image smaller */
+        margin-top: 1em;
+        max-width: 200px; /* Adjusted max-width to make the image smaller */
+    }
+    p{
+        font-size: 2em;
         margin-top: 2em;
     }
-    .title {
-        max-width: 600px;
+    button {
+        font-size: 1.5em;
+        margin-top: 2em;
+        padding: 0.5em 1em;
+        background-color: blue;
+        color: #FFFFFF;
     }
+
+    body {
+        margin: 0;
+        font-family: sans-serif;
+    }
+
 </style>
 <body>
-<div class="container">
 <!--    ./插入1.png 圖片-->
-    <img class ="title" src="1.png" alt="Ad Block">
+<img class ="title" src="1.png" alt="Ad Block">
 
+<div class="container">
+<!--    插入2.png-->
+    <img class ="title" src="2.png" alt="Ad Block">
+    <p>此網站無法使用Ad Block</p>
+    <button onclick="window.location.href='https://getadblock.com/zh_TW/premium/?u=jeh76orx16051903'">點擊查看解決方法</button>
 </div>
+
 </body>
 </html>
